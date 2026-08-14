@@ -1,12 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog</title>
+    <title>Daniel Mora | Diario de Experiencias</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Fuentes de Google: Playfair para un toque editorial, Poppins para modernidad -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+
+    <!-- Navegación -->
+    <header class="navbar">
+        <div class="logo">DM.</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#viajes">Viajes & Amigos</a></li>
+                <li><a href="#recetas">Recetas</a></li>
+                <li><a href="#reflexiones">Reflexiones</a></li>
+                <li><a href="#mi-proceso">Mi Proceso</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Vivir en Voz Alta.</h1>
+            <p>Explorando el mundo, saboreando cada momento y documentando el viaje. Un espacio sobre viajes, amistad, resiliencia y la belleza de lo cotidiano.</p>
+            <a href="#viajes" class="btn-primary">Explorar Historias</a>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <main>
+        
+        <!-- Sección de Viajes (Prioridad solicitada) -->
+        <section id="viajes" class="section-container">
+            <h2 class="section-title">Rutas y Compañía</h2>
+            <p class="section-subtitle">Las mejores historias se escriben con un pasaporte o rodeado de la gente correcta.</p>
+            
+            <div class="grid-layout">
+                <article class="card highlight-card">
+                    <div class="card-image bg-viaje-1"></div>
+                    <div class="card-content">
+                        <span class="category">Viajes</span>
+                        <h3>Aquel Fin de Semana en la Costa</h3>
+                        <p>Arena, sol y la desconexión total que solo el mar te puede dar. Una ruta inolvidable.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-image bg-amigos-1"></div>
+                    <div class="card-content">
+                        <span class="category">Amigos</span>
+                        <h3>Tardes que se vuelven Madrugadas</h3>
+                        <p>Porque las salidas improvisadas siempre terminan siendo las que más recordamos.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-image bg-viaje-2"></div>
+                    <div class="card-content">
+                        <span class="category">Exploración</span>
+                        <h3>Descubriendo Nuevos Rincones</h3>
+                        <p>Salir de la rutina y perderse para encontrarse. Mi guía personal para escapadas rápidas.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Mi Proceso (Cáncer) -->
+        <section id="mi-proceso" class="section-container dark-section">
+            <div class="content-wrapper">
+                <h2 class="section-title">Mi Proceso: Resiliencia y Vida</h2>
+                <p class="section-subtitle text-light">El cáncer es parte de mi historia, pero no la define. Aquí comparto las batallas, los aprendizajes y la fuerza que encuentras cuando no tienes otra opción más que ser fuerte.</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>El Diagnóstico no es el Final</h3>
+                            <p>Cómo cambió mi perspectiva y por qué decidí que esto sería un impulso, no un freno.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Días Grises y Pequeñas Victorias</h3>
+                            <p>Encontrando luz en los momentos más pesados del tratamiento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Recetas y Reflexiones -->
+        <section id="recetas" class="section-container">
+            <div class="split-layout">
+                <div class="split-column">
+                    <h2 class="section-title">Cocina & Sabor</h2>
+                    <article class="card compact-card">
+                        <div class="card-content">
+                            <span class="category">Recetas</span>
+                            <h3>El Arte de un Buen Café y una Pasta al Olio</h3>
+                            <p>Platos simples para momentos complejos. Cocinar como terapia.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="split-column" id="reflexiones">
+                    <h2 class="section-title">Letras & Fechas</h2>
+                    <article class="quote-card">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>
+                            "No mides la vida por los días que respiras, sino por los momentos que te dejan sin aliento."
+                        </blockquote>
+                        <span class="quote-date">Pensamiento del Día</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="motivational-quote">
+                <h3>"La verdadera fuerza no está en evitar las tormentas, sino en aprender a navegar a través de ellas. Crea, viaja, vive."</h3>
+            </div>
+            
+            <div class="social-action">
+                <p>Acompáñame en el día a día:</p>
+                <a href="https://www.instagram.com/danielmora.19?igsh=ZXAxdm5xM3lpMGt4&utm_source=qr" target="_blank" rel="noopener noreferrer" class="instagram-btn">
+                    <i class="fab fa-instagram"></i> Sígueme en @danielmora.19
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Daniel Mora. Diseño y código puro.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
